@@ -2,7 +2,7 @@
 
 Add sounds to your server for events
 
-Downloads:
+# Downloads:
 
 ## Releases:
 

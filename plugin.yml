@@ -6,37 +6,37 @@ main: Taki21\ES\Main
 commands:
  playsounds:
   usage: /playsounds
-  description:
+  description: Plays sounds.
  s1:
   usage: /s1
-  description:
+  description: Plays AnvilFallSound.
  s2:
   usage: /s2
-  description:
+  description: Plays BlazeShootSound.
  s3:
   usage: /s3
-  description:
+  description: Plays ButtonClickSound.
  s4:
   usage: /s4
-  description:
+  description: Plays DoorSound.
  s5:
   usage: /s5
-  description:
+  description: Plays EndermanTeleportSound.
  s6:
   usage: /s6
-  description:
+  description: Plays FizzSound.
  s7:
   usage: /s7
-  description:
+  description: Plays GhastShootSound.
  s8:
   usage: /s8
-  description:
+  description: Plays LaunchSound.
  s9:
   usage: /s9
-  description:
+  description: Plays NoteblockSound.
  s10: 
   usage: /s10
-  description:
+  description: Plays PopSound.
  s11:
   usage: /s11
-  description:
+  description: Plays ZombieHealSound.

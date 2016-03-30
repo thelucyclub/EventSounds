@@ -53,28 +53,20 @@ class Main extends PluginBase implements Listener{
 	public function onJoin(PlayerJoinEvent $event){
 		$pl = $event->getPlayer();
 		$level = $pl->getLevel();
-		$level->addSound(new PopSound($pl));
-	}
-	public function onDeath(PlayerDeathEvent $event){
-		$pl = $event->getEntity();
-		$level = $pl->getLevel();
-		$level->addSound(new AnvilFallSound($pl));
+		$level->addSound(new NoteblockSound($pl));
+		$level->broadcastTip(TextFormat::GREEN . ">" . TextFormat::YELLOW . " $pl")
 	}
 	public function onChat(PlayerChatEvent $event){
 		$pl = $event->getPlayer();
 		$level = $pl->getLevel();
 		$level->addSound(new FizzSound($pl));
 	}
-	public function onAwardedAchievement(PlayerAchievementAwardedEvent $event){
-		$pl = $event->getPlayer();
-		$level = $pl->getLevel();
-		$level->addSound(new NoteblockSound($pl));
-	}
 	public function onQuit(PlayerQuitEvent $event){
 		$pl = $event->getPlayer();
 		$s = $this->config->get("PlayerQuitEvent");
 		$level = $pl->getLevel();
-		$level->addSound(new EndermanTeleportSound($pl));
+		$level->addSound(new NoteblockSound($pl));
+		$level->broadcastTip(TextFormat::RED . "Quit >" . TextFormat::BLUE . " $player")
 	}
 	
 	public function onCommand(CommandSender $s, Command $cmd, $label, array $args){
